@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <title>T SkillLab - Hire Tech Experts</title>
+  <meta name="description"
+    content="Technical interview services, coding evaluations, and architecture reviews to help you hire pre-validated tech talent." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sora:wght@300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="assets/css/styles.css" rel="stylesheet" />
+</head>
+<body data-page="hiring">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="TskillLab" class="site-logo" />
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-1 gap-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-nav="home"><i class="fa fa-house me-1"></i>Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" data-nav="services"
+              data-bs-toggle="dropdown"><i class="fa fa-layer-group me-1"></i>Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="aws.html" data-nav="aws"><i
+                    class="fab fa-aws me-2 text-warning"></i>AWS Cloud Services</a></li>
+              <li><a class="dropdown-item" href="development.html" data-nav="development"><i
+                    class="fa fa-code me-2 text-primary"></i>Custom Development</a></li>
+              <li><a class="dropdown-item" href="ai-agents.html" data-nav="ai-agents"><i
+                    class="fa fa-robot me-2 text-info"></i>AI Agents</a></li>
+              <li><a class="dropdown-item" href="hiring.html" data-nav="hiring"><i
+                    class="fa fa-users me-2 text-success"></i>Hire Tech Experts</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#" data-nav="contact" data-contact-open
+              role="button"><i class="fa fa-envelope me-1"></i>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="service-hero">
+    <div class="container position-relative">
+      <div class="hero-kicker mb-3">
+        <!-- <div class="section-label">Technical Interview Services</div> -->
+        <div class="section-label"
+          style="color:#bfdbfe;background:rgba(37,99,235,0.14);border-color:rgba(96,165,250,0.26);">Technical Interview
+          Services
+        </div>
+      </div>
+      <h1>Hire <span class="hl">Pre-Validated</span> Tech Talent</h1>
+      <p class="mt-3">We find the right technical candidates for your team at budget-friendly rates. We assess talent
+        across cloud, software, DevSecOps, AI/ML, and cybersecurity so you hire with total confidence.</p>
+      <div class="d-flex flex-wrap gap-2 mt-4">
+        <span class="hero-pill">AWS Engineers</span>
+        <span class="hero-pill">Java / Spring Boot</span>
+        <span class="hero-pill">React & Full Stack</span>
+        <span class="hero-pill">DevSecOps</span>
+        <span class="hero-pill">AI & ML</span>
+        <span class="hero-pill">Cybersecurity</span>
+        <span class="hero-pill">QA & SRE</span>
+      </div>
+      <div class="d-flex flex-wrap gap-3 mt-4">
+        <button class="btn-hero-primary" data-contact-open>Schedule a Consultation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAT BAND -->
+  <section class="section-alt py-4">
+    <div class="container">
+      <div class="row text-center g-3">
+        <div class="col-6 col-md-3">
+          <div class="h3 mb-0" style="color:var(--brand-600);font-weight:800;">70%</div>
+          <div class="small text-muted">Less Interview Load</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="h3 mb-0" style="color:var(--brand-600);font-weight:800;">14+</div>
+          <div class="small text-muted">Technology Domains</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="h3 mb-0" style="color:var(--brand-600);font-weight:800;">4</div>
+          <div class="small text-muted">Evaluation Steps</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="h3 mb-0" style="color:var(--brand-600);font-weight:800;">4</div>
+          <div class="small text-muted">Engagement Models</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-label">Expert Vetting</div>
+        <h2 class="section-title">Technical Validation for Your Team</h2>
+        <p class="section-sub mx-auto">We provide expert technical screening to ensure you hire the right candidate with
+          the right skills for your specific tech stack.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-4 d-flex">
+          <div class="card-custom anim-left w-100 card-hover-bright h-blue">
+            <div class="card-icon icon-blue"><i class="fa fa-user-check"></i></div>
+            <div class="card-title-sm">Technical Interviews</div>
+            <p class="card-text-sm">Expert-led technical rounds conducted by senior experts to probe for deep technical
+              knowledge and problem-solving.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 d-flex">
+          <div class="card-custom anim-left w-100 card-hover-bright h-green">
+            <div class="card-icon icon-green"><i class="fa fa-code-branch"></i></div>
+            <div class="card-title-sm">Coding Evaluations</div>
+            <p class="card-text-sm">Practical, live coding sessions where we assess real-world implementation ability
+              and code quality standards.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 d-flex">
+          <div class="card-custom anim-right w-100 card-hover-bright h-purple">
+            <div class="card-icon icon-purple"><i class="fa fa-diagram-project"></i></div>
+            <div class="card-title-sm">Architecture Reviews</div>
+            <p class="card-text-sm">Evaluating system design, scalability choices, and the ability to design complex
+              distributed systems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-label">Our Process</div>
+        <h2 class="section-title">From Candidate to Confident Hire</h2>
+        <p class="section-sub mx-auto">A streamlined 4-step process designed to remove the technical guesswork and help
+          you hire the right talent faster.</p>
+      </div>
+
+      <div class="delivery-horiz-container">
+        <div class="delivery-horiz-wrapper">
+
+          <!-- Step 01 -->
+          <div class="horiz-step path-step">
+            <div class="horiz-node">01</div>
+            <div class="horiz-content">
+              <div class="horiz-icon"><i class="fa fa-bullseye"></i></div>
+              <div class="horiz-content-title">Define Your Needs</div>
+              <p class="horiz-content-desc">We align on the specific technical skills and seniority required for your
+                specific role.</p>
+            </div>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="horiz-step path-step">
+            <div class="horiz-node">02</div>
+            <div class="horiz-content">
+              <div class="horiz-icon"><i class="fa fa-user-shield"></i></div>
+              <div class="horiz-content-title">Expert Stress-Test</div>
+              <p class="horiz-content-desc">Our technical experts conduct deep-dive interviews and intensive live coding
+                sessions.</p>
+            </div>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="horiz-step path-step">
+            <div class="horiz-node">03</div>
+            <div class="horiz-content">
+              <div class="horiz-icon"><i class="fa fa-clipboard-check"></i></div>
+              <div class="horiz-content-title">Strategic Verdict</div>
+              <p class="horiz-content-desc">Get a clear hiring recommendation backed by a data-rich candidate scorecard.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="horiz-step path-step">
+            <div class="horiz-node">04</div>
+            <div class="horiz-content">
+              <div class="horiz-icon"><i class="fa fa-rocket"></i></div>
+              <div class="horiz-content-title">Confident Scaling</div>
+              <p class="horiz-content-desc">Hire the right talent twice as fast and build your engineering team with
+                total certainty.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENGAGEMENT MODELS -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-label">Engagement Models</div>
+        <h2 class="section-title">Flexible Support for Every Hire</h2>
+        <p class="section-sub mx-auto">Choose the model that best fits your current hiring velocity and technical
+          vetting needs.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 d-flex">
+          <div class="card-custom anim-left w-100 h-blue">
+            <div class="card-title-sm">Per Candidate</div>
+            <p class="card-text-sm">Ideal for occasional roles where you need an expert's second opinion. Pay only for
+              the vetting you need.</p>
+            <div class="feature-li"><i class="fa fa-circle-check"></i>
+              <div class="card-text-sm">Technical interview</div>
+            </div>
+            <div class="feature-li"><i class="fa fa-circle-check"></i>
+              <div class="card-text-sm">Detailed scorecard</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex">
+          <div class="card-custom anim-left w-100 h-green">
+            <div class="card-title-sm">Partner Plan</div>
+            <p class="card-text-sm">For growing teams with a steady pipeline. Get priority access and unlimited expert
+              panels.</p>
+            <div class="feature-li"><i class="fa fa-circle-check"></i>
+              <div class="card-text-sm">Priority scheduling</div>
+            </div>
+            <div class="feature-li"><i class="fa fa-circle-check"></i>
+              <div class="card-text-sm">Monthly support</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex">
+          <div class="card-custom anim-right w-100 h-purple">
+            <div class="card-title-sm">Niche Specialists</div>
+            <p class="card-text-sm">On-demand experts for specific, rare tech stacks where your internal team lacks
+              coverage.</p>
+            <div class="feature-li"><i class="fa fa-circle-check"></i>
+              <div class="card-text-sm">Custom rubrics</div>
+            </div>
+            <div class="feature-li"><i class="fa fa-circle-check"></i>
+              <div class="card-text-sm">Senior Expert consult</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex">
+          <div class="card-custom anim-right w-100 h-yellow">
+            <div class="card-title-sm">Scale-Up Partnership</div>
+            <p class="card-text-sm">Full-cycle technical screening managed by us, from code-check to the final sign-off.
+            </p>
+            <div class="feature-li"><i class="fa fa-circle-check"></i>
+              <div class="card-text-sm">End-to-end Vetting</div>
+            </div>
+            <div class="feature-li"><i class="fa fa-circle-check"></i>
+              <div class="card-text-sm">Final recommendation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-alt">
+    <div class="container text-center">
+      <h2 class="section-title">Ready to Find the Right Talent?</h2>
+      <p class="section-sub mx-auto mb-4">Partner with <strong>T</strong> SkillLab to ensure your next hire is technically proven and
+        budget-friendly. Let's build your engineering team with confidence.</p>
+      <div class="d-flex flex-wrap gap-3 justify-content-center">
+        <button class="btn-hero-primary" data-contact-open>Get Started Now</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-4 mb-3">
+        <div class="col-lg-4">
+          <a class="footer-logo mb-3" href="index.html" style="text-decoration: none; display: block;">
+            <img src="images/logo.png" alt="TskillLab" class="site-logo" />
+          </a>
+          <p style="font-size:0.86rem;line-height:1.72;max-width:270px;">Your trusted technology partner for AWS Cloud, Custom Development, AI Agents, and Hire Tech Experts.</p>
+
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <h5>Company</h5>
+          <a class="footer-link" href="index.html">Home</a>
+          <a class="footer-link" href="javascript:void(0)" data-contact-open>Contact</a>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h5>Services</h5>
+          <a class="footer-link" href="aws.html">AWS Cloud Services</a>
+          <a class="footer-link" href="development.html">Custom Development</a>
+          <a class="footer-link" href="ai-agents.html">AI Agents</a>
+          <a class="footer-link" href="hiring.html">Hire Tech Experts</a>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h5>Get In Touch</h5>
+          <p style="font-size:0.85rem;line-height:1.75;">reach@tskilllab.com<br>+91 96645 00020<br>Navi Mumbai, Maharashtra
+            <br>India</p>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        <div style="font-size:0.8rem;">&copy; 2026 <strong>T</strong> SkillLab Pvt. Ltd. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+
+

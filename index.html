@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <title>T SkillLab</title>
+  <meta name="description"
+    content="TskillLab IT Solutions offers AWS Cloud Services, Custom Software Development, IT Consulting, and DevSecOps & Testing." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sora:wght@300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="assets/css/styles.css" rel="stylesheet" />
+</head>
+
+<body data-page="home">
+  <div id="preloader">
+    <div class="preloader-content">
+      <img src="images/tskill_lab.gif" alt="TskillLab" class="splash-logo-img" />
+    </div>
+  </div>
+
+  <div class="main-content">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="TskillLab" class="site-logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-1 gap-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html" data-nav="home"><i
+                  class="fa fa-house me-1"></i>Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="services.html" data-nav="services" data-bs-toggle="dropdown"><i
+                  class="fa fa-layer-group me-1"></i>Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="aws.html" data-nav="aws"><i
+                      class="fab fa-aws me-2 text-warning"></i>AWS Cloud Services</a></li>
+                <li><a class="dropdown-item" href="development.html" data-nav="development"><i
+                      class="fa fa-code me-2 text-primary"></i>Custom Development</a></li>
+                <li><a class="dropdown-item" href="ai-agents.html" data-nav="ai-agents"><i
+                      class="fa fa-robot me-2 text-info"></i>AI Agents</a></li>
+                <li><a class="dropdown-item" href="hiring.html" data-nav="hiring"><i
+                      class="fa fa-users me-2 text-success"></i>Hire Tech Experts</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#" data-nav="contact" data-contact-open role="button"><i
+                  class="fa fa-envelope me-1"></i>Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <!-- Coloured corner accents that echo logo palette -->
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-blob hero-blob-3"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center g-4 pt-5">
+
+        <!-- Left: Copy -->
+        <div class="col-lg-6 order-1 order-lg-1">
+          <h1>You Focus on Vision.<br>We Handle Execution.</h1>
+          <p class="hero-desc">From AWS infrastructure to custom software and AI agents, <strong>T</strong> SkillLab handles every layer
+            of your tech stack — so you can build fast, break nothing, and grow bigger without the tech holding you
+            back.</p>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <div class="hero-pill"><i class="fa fa-check-circle" style="color:var(--g-green);"></i>Expert Engineering
+            </div>
+            <div class="hero-pill"><i class="fa fa-shield-halved" style="color:var(--g-blue);"></i>Security First</div>
+            <div class="hero-pill"><i class="fa fa-piggy-bank" style="color:var(--g-yellow);"></i>Budget Conscious</div>
+          </div>
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <button class="btn-hero-primary" data-contact-open><i class="fa fa-rocket me-2"></i>Start a Project</button>
+            <!-- <button class="btn-hero-outline" data-contact-open>Get Free Consultation</button> -->
+          </div>
+          <!-- Stats row -->
+          <!-- <div class="hero-stats-row">
+            <div class="hero-stat">
+              <div class="hero-stat-num" style="color:var(--g-blue);">50+</div>
+              <div class="hero-stat-label">Projects Delivered</div>
+            </div>
+            <div class="hero-stat-div"></div>
+            <div class="hero-stat">
+              <div class="hero-stat-num" style="color:var(--g-green);">30+</div>
+              <div class="hero-stat-label">Happy Clients</div>
+            </div>
+            <div class="hero-stat-div"></div>
+            <div class="hero-stat">
+              <div class="hero-stat-num" style="color:var(--g-red);">5★</div>
+              <div class="hero-stat-label">Client Rating</div>
+            </div>
+          </div> -->
+        </div>
+
+        <!-- Right: Hero image -->
+        <div class="col-lg-6 order-2 order-lg-2 d-flex justify-content-center">
+          <img src="images/home_page.png"
+            alt="Technology services illustration showing cloud, AI, web, analytics, and AWS solutions"
+            class="hero-image" loading="eager" />
+        </div>
+
+      </div>
+    </div>
+    <!-- 4-colour bottom accent line -->
+    <div class="hero-bottom-stripe"></div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-label">Why <strong>T</strong> SkillLab</div>
+        <h2 class="section-title">Built on Trust, Driven by Excellence</h2>
+        <p class="section-sub mx-auto">A team of passionate engineers and consultants who treat your business goals as
+          their own, with a client-centric approach that keeps your priorities at the center.</p>
+      </div>
+      <div class="row g-3">
+        <div class="col-sm-6 col-lg-4 d-flex">
+          <div class="why-card anim-left w-100 h-blue">
+            <div class="why-icon"><i class="fa fa-users"></i></div>
+            <div>
+              <div style="font-weight:700;font-size:0.95rem;color:var(--text-primary);margin-bottom:5px;">Expert
+                Engineering Team</div>
+              <div class="card-text-sm">Skilled engineers with deep domain expertise across cloud, software, and
+                security.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 d-flex">
+          <div class="why-card anim-left w-100 h-green">
+            <div class="why-icon"><i class="fa fa-heart"></i></div>
+            <div>
+              <div style="font-weight:700;font-size:0.95rem;color:var(--text-primary);margin-bottom:5px;">Client-Centric
+                Approach</div>
+              <div class="card-text-sm">We listen first, adapt to your goals, and shape the solution around what matters
+                most to you.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 d-flex">
+          <div class="why-card anim-left w-100 h-red">
+            <div class="why-icon"><i class="fa fa-lock"></i></div>
+            <div>
+              <div style="font-weight:700;font-size:0.95rem;color:var(--text-primary);margin-bottom:5px;">Security-First
+                Mindset</div>
+              <div class="card-text-sm">Security integrated at every stage — from design to deployment and beyond.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 d-flex">
+          <div class="why-card anim-right w-100 h-purple">
+            <div class="why-icon"><i class="fa fa-expand"></i></div>
+            <div>
+              <div style="font-weight:700;font-size:0.95rem;color:var(--text-primary);margin-bottom:5px;">Scalable
+                Architecture</div>
+              <div class="card-text-sm">Solutions designed to grow with your business, not just solve today's problems.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 d-flex">
+          <div class="why-card anim-right w-100 h-yellow">
+            <div class="why-icon"><i class="fa fa-piggy-bank"></i></div>
+            <div>
+              <div style="font-weight:700;font-size:0.95rem;color:var(--text-primary);margin-bottom:5px;">
+                Budget-Conscious Approach</div>
+              <div class="card-text-sm">Quality solutions optimized for cost efficiency without sacrificing performance.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 d-flex">
+          <div class="why-card anim-right w-100 h-blue">
+            <div class="why-icon"><i class="fa fa-rotate"></i></div>
+            <div>
+              <div style="font-weight:700;font-size:0.95rem;color:var(--text-primary);margin-bottom:5px;">Agile Delivery
+              </div>
+              <div class="card-text-sm">Iterative sprints delivering value early and adapting quickly to changing
+                requirements.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES OVERVIEW -->
+  <section class="section" style="padding-bottom:42px;">
+    <div class="container">
+      <div class="text-center mb-5 services-heading-stack">
+        <div class="section-label">Our Services</div>
+        <h2 class="section-title">What We Build For You</h2>
+        <p class="section-sub mx-auto">Comprehensive IT solutions to accelerate your business growth and modernize your
+          technology stack.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 d-flex">
+          <div class="svc-card anim-left w-100 card-hover-bright h-yellow" onclick="window.location.href='aws.html'">
+            <div class="card-icon icon-yellow"><i class="fab fa-aws"></i></div>
+            <div class="card-title-sm" style="font-size:1.07rem;">AWS Cloud Services</div>
+            <p class="card-text-sm">Infrastructure setup, cloud migration, monitoring, cost optimization, and security
+              on AWS — end to end.</p>
+            <div class="svc-explore">Explore <i class="fa fa-arrow-right ms-1" style="font-size:0.75rem;"></i></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex">
+          <div class="svc-card anim-left w-100 card-hover-bright h-blue"
+            onclick="window.location.href='development.html'">
+            <div class="card-icon icon-blue"><i class="fa fa-laptop-code"></i></div>
+            <div class="card-title-sm" style="font-size:1.07rem;">Custom Development</div>
+            <p class="card-text-sm">Full-stack web apps, REST APIs, and mobile-responsive solutions with React,
+              Java/Spring Boot & more.</p>
+            <div class="svc-explore">Explore <i class="fa fa-arrow-right ms-1" style="font-size:0.75rem;"></i></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex">
+          <div class="svc-card anim-right w-100 card-hover-bright h-purple"
+            onclick="window.location.href='ai-agents.html'">
+            <div class="card-icon icon-purple"><i class="fa fa-robot"></i></div>
+            <div class="card-title-sm" style="font-size:1.07rem;">AI Agents</div>
+            <p class="card-text-sm">Task-focused AI that handles support, operations, and repetitive workflows while
+              keeping humans in control.</p>
+            <div class="svc-explore">Explore <i class="fa fa-arrow-right ms-1" style="font-size:0.75rem;"></i></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex">
+          <div class="svc-card anim-right w-100 card-hover-bright h-green" onclick="window.location.href='hiring.html'">
+            <div class="card-icon icon-green"><i class="fa fa-users"></i></div>
+            <div class="card-title-sm" style="font-size:1.07rem;">Hire Tech Experts</div>
+            <p class="card-text-sm">Expert technical interview panels that act as an extension of your HR team to
+              pre-validate engineering talent.</p>
+            <div class="svc-explore">Explore <i class="fa fa-arrow-right ms-1" style="font-size:0.75rem;"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGIES -->
+  <section class="section" style="padding-top:32px;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-label">Technology Stack</div>
+        <h2 class="section-title">Tools We Master</h2>
+        <p class="section-sub mx-auto">A carefully chosen stack of proven technologies to build reliable, scalable
+          solutions.</p>
+      </div>
+      <div class="tech-ticker-wrapper">
+        <div class="tech-ticker">
+          <div class="tech-ticker-content">
+            <span class="tech-pill"><i class="fab fa-aws" style="color:#f90;"></i> AWS</span>
+            <span class="tech-pill"><i class="fab fa-react" style="color:#61dafb;"></i> React</span>
+            <span class="tech-pill"><i class="fa fa-leaf" style="color:#6db33f;"></i> Spring Boot</span>
+            <span class="tech-pill"><i class="fab fa-docker" style="color:#2496ed;"></i> Docker</span>
+            <span class="tech-pill"><i class="fa fa-infinity" style="color:#d24939;"></i> Jenkins</span>
+            <span class="tech-pill"><i class="fa fa-database" style="color:#336791;"></i> PostgreSQL</span>
+            <span class="tech-pill"><i class="fab fa-js" style="color:#e5c900;"></i> JavaScript</span>
+            <span class="tech-pill"><i class="fab fa-java" style="color:#ed8b00;"></i> Java</span>
+            <span class="tech-pill"><i class="fab fa-html5" style="color:#e34f26;"></i> HTML/CSS</span>
+            <span class="tech-pill"><i class="fa fa-server" style="color:#009639;"></i> Nginx</span>
+            <span class="tech-pill"><i class="fa fa-shield-halved" style="color:var(--g-red);"></i> Security</span>
+            <span class="tech-pill"><i class="fa fa-database" style="color:#00758f;"></i> MySQL</span>
+            <span class="tech-pill"><i class="fab fa-git-alt" style="color:#f05032;"></i> Git</span>
+            <span class="tech-pill"><i class="fab fa-linux" style="color:var(--text-primary);"></i> Linux</span>
+          </div>
+          <!-- Duplicate for seamless scroll -->
+          <div class="tech-ticker-content" aria-hidden="true">
+            <span class="tech-pill"><i class="fab fa-aws" style="color:#f90;"></i> AWS</span>
+            <span class="tech-pill"><i class="fab fa-react" style="color:#61dafb;"></i> React</span>
+            <span class="tech-pill"><i class="fa fa-leaf" style="color:#6db33f;"></i> Spring Boot</span>
+            <span class="tech-pill"><i class="fab fa-docker" style="color:#2496ed;"></i> Docker</span>
+            <span class="tech-pill"><i class="fa fa-infinity" style="color:#d24939;"></i> Jenkins</span>
+            <span class="tech-pill"><i class="fa fa-database" style="color:#336791;"></i> PostgreSQL</span>
+            <span class="tech-pill"><i class="fab fa-js" style="color:#e5c900;"></i> JavaScript</span>
+            <span class="tech-pill"><i class="fab fa-java" style="color:#ed8b00;"></i> Java</span>
+            <span class="tech-pill"><i class="fab fa-html5" style="color:#e34f26;"></i> HTML/CSS</span>
+            <span class="tech-pill"><i class="fa fa-server" style="color:#009639;"></i> Nginx</span>
+            <span class="tech-pill"><i class="fa fa-shield-halved" style="color:var(--g-red);"></i> Security</span>
+            <span class="tech-pill"><i class="fa fa-database" style="color:#00758f;"></i> MySQL</span>
+            <span class="tech-pill"><i class="fab fa-git-alt" style="color:#f05032;"></i> Git</span>
+            <span class="tech-pill"><i class="fab fa-linux" style="color:var(--text-primary);"></i> Linux</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-label">Client Voices</div>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-sub mx-auto">Real feedback from businesses we've partnered with on their technology journey.
+        </p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4 d-flex">
+          <div class="testi-card w-100">
+            <div class="d-flex align-items-center gap-2 mb-3"
+              style="color:#fbbc04;font-size:0.82rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;">
+              <i class="fa fa-quote-left"></i><span>Client feedback</span>
+            </div>
+            <p class="testi-quote">"<strong>T</strong> SkillLab delivered our AWS migration with zero downtime. Their team was
+              professional, proactive, and deeply knowledgeable about cloud architecture. Highly recommended."</p>
+            <div class="d-flex align-items-center gap-3 mt-4 pt-3" style="border-top:1px solid var(--border);">
+              <div class="avatar" style="background:var(--g-blue);">AK</div>
+              <div>
+                <div style="font-weight:700;font-size:0.9rem;color:var(--text-primary);">Arjun Kapoor</div>
+                <div style="font-size:0.78rem;color:var(--text-muted);">CTO, FinEdge Solutions</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex">
+          <div class="testi-card w-100">
+            <div class="d-flex align-items-center gap-2 mb-3"
+              style="color:#fbbc04;font-size:0.82rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;">
+              <i class="fa fa-quote-left"></i><span>Client feedback</span>
+            </div>
+            <p class="testi-quote">"Their custom development team built our full-stack platform in record time. Code
+              quality was exceptional and the communication was always transparent and clear."</p>
+            <div class="d-flex align-items-center gap-3 mt-4 pt-3" style="border-top:1px solid var(--border);">
+              <div class="avatar" style="background:var(--g-green);">SP</div>
+              <div>
+                <div style="font-weight:700;font-size:0.9rem;color:var(--text-primary);">Sneha Patel</div>
+                <div style="font-size:0.78rem;color:var(--text-muted);">Product Manager, RetailTech</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex">
+          <div class="testi-card w-100">
+            <div class="d-flex align-items-center gap-2 mb-3"
+              style="color:#fbbc04;font-size:0.82rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;">
+              <i class="fa fa-quote-left"></i><span>Client feedback</span>
+            </div>
+            <p class="testi-quote">"The DevSecOps pipeline <strong>T</strong> SkillLab built transformed our deployment process. We went
+              from weekly releases to multiple safe deployments per day. Game changer."</p>
+            <div class="d-flex align-items-center gap-3 mt-4 pt-3" style="border-top:1px solid var(--border);">
+              <div class="avatar" style="background:var(--g-red);">RV</div>
+              <div>
+                <div style="font-weight:700;font-size:0.9rem;color:var(--text-primary);">Rohan Verma</div>
+                <div style="font-size:0.78rem;color:var(--text-muted);">Engineering Lead, SaaS Co.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="section">
+    <div class="container text-center">
+      <div class="section-label home-cta-label">Ready to Start?</div>
+      <h2 class="section-title home-cta-title">Let's Build Something Great Together</h2>
+      <p class="home-cta-text">Tell us about your project and we&apos;ll get back within 24 hours - no strings attached.
+      </p>
+      <button class="btn-hero-primary mt-3" data-contact-open>Get a Free Consultation</button>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row g-4 mb-3">
+        <div class="col-lg-4">
+          <a class="footer-logo mb-3" href="index.html" style="text-decoration: none; display: block;">
+            <img src="images/logo.png" alt="TskillLab" class="site-logo" />
+          </a>
+          <p style="font-size:0.86rem;line-height:1.72;max-width:270px;">Your trusted technology partner for AWS Cloud,
+            Custom Development, AI Agents, and Hire Tech Experts.</p>
+
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <h5>Company</h5>
+          <a class="footer-link" href="index.html">Home</a>
+          <a class="footer-link" href="javascript:void(0)" data-contact-open>Contact</a>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h5>Services</h5>
+          <a class="footer-link" href="aws.html">AWS Cloud Services</a>
+          <a class="footer-link" href="development.html">Custom Development</a>
+          <a class="footer-link" href="ai-agents.html">AI Agents</a>
+          <a class="footer-link" href="hiring.html">Hire Tech Experts</a>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h5>Get In Touch</h5>
+          <p style="font-size:0.85rem;line-height:1.75;">reach@tskilllab.com<br>+91 96645 00020<br>Navi Mumbai, Maharashtra
+            <br>India</p>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        <div style="font-size:0.8rem;">&copy; 2026 <strong>T</strong> SkillLab Pvt. Ltd. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/preloader.js"></script>
+</body>
+
+</html>
+
+

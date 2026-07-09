@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <title>T SkillLab - AWS Cloud Services</title>
+  <meta name="description"
+    content="AWS cloud architecture, migration, scaling, security, and optimization services from TskillLab." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sora:wght@300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="assets/css/styles.css" rel="stylesheet" />
+</head>
+<body data-page="aws">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="TskillLab" class="site-logo" />
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-1 gap-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-nav="home"><i class="fa fa-house me-1"></i>Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" data-nav="services"
+              data-bs-toggle="dropdown"><i class="fa fa-layer-group me-1"></i>Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="aws.html" data-nav="aws"><i
+                    class="fab fa-aws me-2 text-warning"></i>AWS Cloud Services</a></li>
+              <li><a class="dropdown-item" href="development.html" data-nav="development"><i
+                    class="fa fa-code me-2 text-primary"></i>Custom Development</a></li>
+              <li><a class="dropdown-item" href="ai-agents.html" data-nav="ai-agents"><i
+                    class="fa fa-robot me-2 text-info"></i>AI Agents</a></li>
+              <li><a class="dropdown-item" href="hiring.html" data-nav="hiring"><i
+                    class="fa fa-users me-2 text-success"></i>Hire Tech Experts</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#" data-nav="contact" data-contact-open
+              role="button"><i class="fa fa-envelope me-1"></i>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="service-hero">
+    <div class="container position-relative">
+      <div class="hero-kicker mb-3">
+        <!-- <div class="section-label"
+          style="color:#fde68a;background:rgba(245,158,11,0.16);border-color:rgba(245,158,11,0.28);">AWS Cloud Services
+        </div> -->
+        <div class="section-label"
+          style="color:#bfdbfe;background:rgba(37,99,235,0.14);border-color:rgba(96,165,250,0.26);">AWS Cloud Services
+        </div>
+      </div>
+      <h1>Scale smarter on <span class="hl">Amazon Web Services</span></h1>
+      <p class="mt-3" style="max-width:680px;">From architecture design to cost optimisation, we help startups and
+        enterprises build infrastructure that's fast, secure, and ready for what's next.</p>
+      <div class="d-flex flex-wrap gap-2 mb-4">
+        <div class="hero-pill"><i class="fa fa-shield-halved" style="color:var(--brand-400);"></i>Well-Architected</div>
+        <div class="hero-pill"><i class="fa fa-gauge-high" style="color:var(--g-green);"></i>Performance Tuned</div>
+      </div>
+
+      <div class="d-flex flex-wrap gap-3 mt-4">
+        <button class="btn-hero-primary" data-contact-open>Plan Your Migration</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-label">What We Do</div>
+        <h2 class="section-title">End-to-end AWS services</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 d-flex">
+          <div class="card-custom anim-left w-100 card-hover-bright h-blue">
+            <div class="card-icon icon-blue"><i class="fa fa-diagram-project"></i></div>
+            <div class="card-title-sm">Cloud Architecture & Design</div>
+            <p class="card-text-sm">We design resilient, scalable AWS architectures aligned with the Well-Architected
+              Framework — tailored to your workloads and growth trajectory.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex">
+          <div class="card-custom anim-left w-100 card-hover-bright h-green">
+            <div class="card-icon icon-teal"><i class="fa fa-right-left"></i></div>
+            <div class="card-title-sm">Cloud Migration</div>
+            <p class="card-text-sm">Move workloads with less downtime, better planning, and a cloud-native architecture
+              that is easier to manage.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex">
+          <div class="card-custom anim-left w-100 card-hover-bright h-yellow">
+            <div class="card-icon icon-green"><i class="fa fa-code-branch"></i></div>
+            <div class="card-title-sm">DevOps & CI/CD</div>
+            <p class="card-text-sm">We help you ship faster with automated delivery, smoother releases, and more
+              reliable operations.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex">
+          <div class="card-custom anim-right w-100 card-hover-bright h-purple">
+            <div class="card-icon icon-purple"><i class="fa fa-user-shield"></i></div>
+            <div class="card-title-sm">Security Hardening</div>
+            <p class="card-text-sm">Least-privilege access, logging, encryption, and guardrails to keep the environment
+              safer by default.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex">
+          <div class="card-custom anim-right w-100 card-hover-bright h-yellow">
+            <div class="card-icon icon-yellow"><i class="fa fa-chart-pie"></i></div>
+            <div class="card-title-sm">Cost Optimization</div>
+            <p class="card-text-sm">Rightsizing, storage cleanup, and usage analysis to reduce spend without hurting
+              performance.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex">
+          <div class="card-custom anim-right w-100 card-hover-bright h-red">
+            <div class="card-icon icon-blue"><i class="fa fa-brain"></i></div>
+            <div class="card-title-sm">Data & AI/ML</div>
+            <p class="card-text-sm">We help you turn data into insights with scalable analytics and AI/ML solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div class="section-label">Why It Works</div>
+          <h2 class="section-title">Cloud Decisions That Stay Easy to Maintain</h2>
+          <p class="section-sub">We focus on the parts that keep operations stable over time, not just the first
+            deployment. That makes the setup easier for your team to own later.</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-sm-6 d-flex">
+              <div class="why-card anim-left w-100">
+                <div class="why-icon"><i class="fa fa-expand"></i></div>
+                <div>
+                  <div style="font-weight:700;color:var(--text-primary);margin-bottom:5px;">Elastic growth</div>
+                  <div class="card-text-sm">Scale when traffic grows without rebuilding the platform.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 d-flex">
+              <div class="why-card anim-left w-100">
+                <div class="why-icon"><i class="fa fa-lock"></i></div>
+                <div>
+                  <div style="font-weight:700;color:var(--text-primary);margin-bottom:5px;">Safer defaults</div>
+                  <div class="card-text-sm">Security rules and logging are part of the baseline setup.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 d-flex">
+              <div class="why-card anim-right w-100">
+                <div class="why-icon"><i class="fa fa-gauge-high"></i></div>
+                <div>
+                  <div style="font-weight:700;color:var(--text-primary);margin-bottom:5px;">Better performance</div>
+                  <div class="card-text-sm">CloudWatch and tuning help keep the experience responsive.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 d-flex">
+              <div class="why-card anim-right w-100">
+                <div class="why-icon"><i class="fa fa-piggy-bank"></i></div>
+                <div>
+                  <div style="font-weight:700;color:var(--text-primary);margin-bottom:5px;">Controlled spend</div>
+                  <div class="card-text-sm">We trim waste before it becomes a recurring cost problem.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container text-center">
+      <div class="section-label">Next Step</div>
+      <h2 class="section-title">Need AWS Help Right Now?</h2>
+      <p class="section-sub mx-auto">We can start with a quick review of your current setup or map out a new
+        architecture from scratch.</p>
+      <button class="btn-hero-primary mt-3" data-contact-open>Talk About AWS</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-4 mb-3">
+        <div class="col-lg-4">
+          <a class="footer-logo mb-3" href="index.html" style="text-decoration: none; display: block;">
+            <img src="images/logo.png" alt="TskillLab" class="site-logo" />
+          </a>
+          <p style="font-size:0.86rem;line-height:1.72;max-width:270px;">Your trusted technology partner for AWS Cloud, Custom Development, AI Agents, and Hire Tech Experts.</p>
+
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <h5>Company</h5>
+          <a class="footer-link" href="index.html">Home</a>
+          <a class="footer-link" href="javascript:void(0)" data-contact-open>Contact</a>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h5>Services</h5>
+          <a class="footer-link" href="aws.html">AWS Cloud Services</a>
+          <a class="footer-link" href="development.html">Custom Development</a>
+          <a class="footer-link" href="ai-agents.html">AI Agents</a>
+          <a class="footer-link" href="hiring.html">Hire Tech Experts</a>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h5>Get In Touch</h5>
+          <p style="font-size:0.85rem;line-height:1.75;">reach@tskilllab.com<br>+91 96645 00020<br>Navi Mumbai, Maharashtra
+            <br>India</p>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        <div style="font-size:0.8rem;">&copy; 2026 <strong>T</strong> SkillLab Pvt. Ltd. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+
+
