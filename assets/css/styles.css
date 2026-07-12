@@ -2837,8 +2837,8 @@ footer p {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background:
     radial-gradient(circle at top left, rgba(26, 115, 232, .18), transparent 35%),
     radial-gradient(circle at bottom right, rgba(52, 168, 83, .14), transparent 35%),
@@ -2898,7 +2898,9 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 28px;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 /* ── Bouncing dots spinner ── */
