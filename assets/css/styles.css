@@ -148,7 +148,6 @@ span:not(.badge):not([class*="icon"]):not([class*="btn"]) {
   }
 }
 
-/* ===== NAVBAR ===== */
 .navbar {
   background: var(--nav-bg);
   border-bottom: 1px solid var(--nav-border);
@@ -158,7 +157,8 @@ span:not(.badge):not([class*="icon"]):not([class*="btn"]) {
   top: 0;
   z-index: 2000;
   transition: background var(--transition), border-color var(--transition);
-  padding: 0.4rem 0;
+  padding: 10px 0;
+  min-height: 72px;
   overflow: visible !important;
 }
 
@@ -167,6 +167,8 @@ span:not(.badge):not([class*="icon"]):not([class*="btn"]) {
   align-items: center;
   color: var(--text-primary) !important;
   text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Prevent the generic a:hover rule from tinting the logo anchors */
@@ -190,7 +192,7 @@ span:not(.badge):not([class*="icon"]):not([class*="btn"]) {
 .site-logo {
   display: block;
   width: auto;
-  height: 70px;
+  height: 150px;
   object-fit: contain;
   /* Lock logo image — never change appearance on hover */
   -webkit-user-drag: none;
@@ -206,12 +208,26 @@ span:not(.badge):not([class*="icon"]):not([class*="btn"]) {
 }
 
 .navbar-brand .site-logo {
-  height: 80px;
+  height: 85px;
+  margin: 4px 0;
   transform: none;
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 991px) {
+  .navbar-brand .site-logo {
+    height: 90px;
+    margin: 4px 0;
+  }
+  .navbar {
+    padding: 0;
+    min-height: 85px;
+  }
 }
 
 .footer-logo .site-logo {
-  height: 65px;
+  height: 60px;
   transform: none;
 }
 
@@ -250,7 +266,8 @@ span:not(.badge):not([class*="icon"]):not([class*="btn"]) {
   top: 0;
   z-index: 2000;
   transition: box-shadow var(--transition);
-  padding: 0.4rem 0;
+  padding: 0;
+  min-height: 72px;
   overflow: visible !important;
   /* Subtle 4-colour gradient bottom line */
   box-shadow: 0 1px 0 0 rgba(26, 115, 232, 0.10),
@@ -272,6 +289,7 @@ span:not(.badge):not([class*="icon"]):not([class*="btn"]) {
   display: flex;
   align-items: center;
   text-decoration: none;
+  overflow: visible;
 }
 
 /* Prevent hover tinting on logo anchors */
@@ -3010,13 +3028,13 @@ footer p {
   object-fit: contain;
   z-index: 10001;
   transition:
-    top 1.1s cubic-bezier(0.4, 0, 0.2, 1),
-    left 1.1s cubic-bezier(0.4, 0, 0.2, 1),
-    width 1.1s cubic-bezier(0.4, 0, 0.2, 1),
-    height 1.1s cubic-bezier(0.4, 0, 0.2, 1),
-    transform 1.1s cubic-bezier(0.4, 0, 0.2, 1),
-    filter 1.1s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.5s ease 0.8s;
+    top 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    left 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    width 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    height 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    filter 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s ease 0.4s;
   pointer-events: none;
   filter: blur(0px);
 }

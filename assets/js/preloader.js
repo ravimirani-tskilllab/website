@@ -1,3 +1,6 @@
+// Record the moment this script executes — as close as possible to when the GIF starts.
+const _preloaderScriptStart = performance.now();
+
 document.addEventListener('DOMContentLoaded', () => {
     const preloader = document.getElementById('preloader');
     const splashLogo = document.querySelector('.splash-logo-img, .splash-logo');
@@ -10,58 +13,58 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    // Hide navbar logo initially to prevent duplication during transition
     navLogo.style.opacity = '0';
 
-    // Wait for the splash entrance animation to finish + hold time
+    // GIF active drawing animation duration: 3210ms
+    const gifDuration = 3210;
+    const elapsed = performance.now() - _preloaderScriptStart;
+    const remaining = Math.max(0, gifDuration - elapsed);
+
+    // Prepare the moving logo clone immediately so it's ready to animate
+    const navRect = navLogo.getBoundingClientRect();
+    const splashRect = splashLogo.getBoundingClientRect();
+
+    const movingLogo = splashLogo.cloneNode(true);
+    movingLogo.classList.remove('splash-logo', 'splash-logo-img');
+    movingLogo.classList.add('logo-moving');
+
+    movingLogo.style.top = splashRect.top + 'px';
+    movingLogo.style.left = splashRect.left + 'px';
+    movingLogo.style.width = splashRect.width + 'px';
+    movingLogo.style.height = splashRect.height + 'px';
+    movingLogo.style.transform = 'scale(1)';
+    movingLogo.style.opacity = '0'; // invisible until animation starts
+    movingLogo.style.transition = 'none';
+
+    document.body.appendChild(movingLogo);
+
+    // When the GIF animation completes (after 210ms total delay) — fire the slide/move transition
     setTimeout(() => {
-        // Calculate the destination (navbar logo position)
-        const navRect = navLogo.getBoundingClientRect();
-        const splashRect = splashLogo.getBoundingClientRect();
-
-        // Create a clone for the transition animation
-        const movingLogo = splashLogo.cloneNode(true);
-        movingLogo.classList.remove('splash-logo', 'splash-logo-img');
-        movingLogo.classList.add('logo-moving');
-
-        // Initial state (centered as it appears in splash)
-        movingLogo.style.top = splashRect.top + 'px';
-        movingLogo.style.left = splashRect.left + 'px';
-        movingLogo.style.width = splashRect.width + 'px';
-        movingLogo.style.height = splashRect.height + 'px';
-        movingLogo.style.transform = 'scale(1)';
-
-        document.body.appendChild(movingLogo);
-
-        // Hide the original splash logo completely to avoid duplication
+        // Show moving logo, hide original
         splashLogo.style.visibility = 'hidden';
         splashLogo.style.opacity = '0';
+        movingLogo.style.transition = '';
+        movingLogo.style.opacity = '1';
 
-        // Trigger transition to navbar position after a short delay
-        setTimeout(() => {
-            requestAnimationFrame(() => {
-                movingLogo.classList.add('in-flight');
+        requestAnimationFrame(() => {
+            movingLogo.classList.add('in-flight');
 
-                movingLogo.style.top = navRect.top + 'px';
-                movingLogo.style.left = navRect.left + 'px';
-                movingLogo.style.width = navRect.width + 'px';
-                movingLogo.style.height = navRect.height + 'px';
-                movingLogo.style.transform = 'scale(1)';
-                movingLogo.style.transformOrigin = 'top left';
+            // Get fresh navRect in case of scroll/resize
+            const currentNavRect = navLogo.getBoundingClientRect();
+            movingLogo.style.top = currentNavRect.top + 'px';
+            movingLogo.style.left = currentNavRect.left + 'px';
+            movingLogo.style.width = currentNavRect.width + 'px';
+            movingLogo.style.height = currentNavRect.height + 'px';
+            movingLogo.style.transform = 'scale(1)';
+            movingLogo.style.transformOrigin = 'top left';
 
-                // Slide the preloader out to the left simultaneously
-                setTimeout(() => {
-                    preloader.classList.add('fade-out');
-                }, 200);
+            // Slide preloader out simultaneously
+            preloader.classList.add('fade-out');
 
-                // Remove in-flight blur just before logo arrives
-                setTimeout(() => {
-                    movingLogo.classList.remove('in-flight');
-                }, 900);
-            });
-        }, 50);
+            setTimeout(() => movingLogo.classList.remove('in-flight'), 500);
+        });
 
-        // After transition finishes — show real nav logo and reveal site
+        // After transition — show real nav logo and reveal site
         setTimeout(() => {
             document.body.classList.add('splash-done');
             if (mainContent) mainContent.classList.add('content-unveil');
@@ -77,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 preloader.remove();
                 movingLogo.remove();
             }, 350);
-        }, 1200);
+        }, 700);
 
-    }, 4000);
+    }, remaining);
 });
