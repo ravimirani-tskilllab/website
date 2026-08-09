@@ -338,6 +338,111 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactSlider();
   initAnimations();
   initHeroAnimation();
+  initClientRegions();
 });
 
 window.addEventListener('hashchange', syncNavState);
+
+// ===== CLIENT REGIONS AUTO-ROTATE =====
+function initClientRegions() {
+  const tabs   = document.querySelectorAll('.creg-tab');
+  const panels = document.querySelectorAll('.creg-panel');
+  const fill   = document.getElementById('cregFill');
+  if (!tabs.length || !fill) return;
+
+  const DURATION = 4000; // 4.0s per region
+  const TICK     = 30;   // ms per progress tick
+  let current    = 0;
+  let elapsed    = 0;
+  let paused     = false;
+  let started    = false;
+
+  function showRegion(idx) {
+    tabs.forEach((t, i) => t.classList.toggle('active', i === idx));
+    panels.forEach((p, i) => {
+      if (i === idx) {
+        p.classList.remove('active');
+        void p.offsetWidth; // force reflow so animation re-triggers
+        p.classList.add('active');
+        // Stagger client list items
+        p.querySelectorAll('.creg-client-list li').forEach((item, j) => {
+          item.style.animationDelay = (j * 40) + 'ms';
+        });
+      } else {
+        p.classList.remove('active');
+      }
+    });
+
+    // Reset progress bar
+    fill.style.transition = 'none';
+    fill.style.width = '0%';
+    void fill.offsetWidth;
+    fill.style.transition = `width ${DURATION}ms linear`;
+    fill.style.width = '100%';
+
+    current = idx;
+    elapsed = 0;
+  }
+
+  function tick() {
+    if (paused) return;
+    elapsed += TICK;
+    if (elapsed >= DURATION) {
+      showRegion((current + 1) % tabs.length);
+    }
+  }
+
+  // Tab clicks
+  tabs.forEach((tab, idx) => {
+    tab.addEventListener('click', () => {
+      paused = false;
+      showRegion(idx);
+    });
+  });
+
+  // Pause on hover
+  const container = document.getElementById('cregPanels');
+  if (container) {
+    container.addEventListener('mouseenter', () => {
+      paused = true;
+      fill.style.transition = 'none'; // freeze bar
+    });
+    container.addEventListener('mouseleave', () => {
+      paused = false;
+      // Resume bar from current position
+      const pct = (elapsed / DURATION * 100);
+      fill.style.width = pct + '%';
+      void fill.offsetWidth;
+      fill.style.transition = `width ${DURATION - elapsed}ms linear`;
+      fill.style.width = '100%';
+    });
+  }
+
+  function startCarousel() {
+    if (started) return;
+    started = true;
+    showRegion(0); // Always start fresh from 1st tab (Asia Pacific)
+    setInterval(tick, TICK);
+  }
+
+  // Use IntersectionObserver to start carousel fresh from 1st tab when user scrolls to section
+  const section = document.getElementById('ourClients');
+  if (section && 'IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          startCarousel();
+          showRegion(0); // Reset to 1st tab when scrolled into view
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.25 });
+    observer.observe(section);
+  } else {
+    startCarousel();
+  }
+}
+
+
+
+

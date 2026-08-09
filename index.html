@@ -17,11 +17,13 @@
 </head>
 
 <body data-page="home">
+  <!-- PRELOADER (Commented Out)
   <div id="preloader">
     <div class="preloader-content">
       <img src="images/tskill_lab.gif" alt="TskillLab" class="splash-logo-img" />
     </div>
   </div>
+  -->
 
   <div class="main-content">
     <nav class="navbar navbar-expand-lg">
@@ -221,7 +223,7 @@
             <div class="card-icon icon-blue"><i class="fa fa-laptop-code"></i></div>
             <div class="card-title-sm" style="font-size:1.07rem;">Custom Development</div>
             <p class="card-text-sm">Full-stack web apps, REST APIs, and mobile-responsive solutions with React,
-              Java/Spring Boot & more.</p>
+              Java/Spring Boot, .Net/C# & more.</p>
             <div class="svc-explore">Explore <i class="fa fa-arrow-right ms-1" style="font-size:0.75rem;"></i></div>
           </div>
         </div>
@@ -274,6 +276,9 @@
             <span class="tech-pill"><i class="fa fa-database" style="color:#00758f;"></i> MySQL</span>
             <span class="tech-pill"><i class="fab fa-git-alt" style="color:#f05032;"></i> Git</span>
             <span class="tech-pill"><i class="fab fa-linux" style="color:var(--text-primary);"></i> Linux</span>
+            <span class="tech-pill"><i class="fab fa-microsoft" style="color:#5c2d91;"></i> .Net</span>
+            <span class="tech-pill"><i class="fa fa-code" style="color:#9b4f96;"></i> C#</span>
+            <span class="tech-pill"><i class="fa fa-database" style="color:#cc292b;"></i> SQL Server</span>
           </div>
           <!-- Duplicate for seamless scroll -->
           <div class="tech-ticker-content" aria-hidden="true">
@@ -291,76 +296,116 @@
             <span class="tech-pill"><i class="fa fa-database" style="color:#00758f;"></i> MySQL</span>
             <span class="tech-pill"><i class="fab fa-git-alt" style="color:#f05032;"></i> Git</span>
             <span class="tech-pill"><i class="fab fa-linux" style="color:var(--text-primary);"></i> Linux</span>
+            <span class="tech-pill"><i class="fab fa-microsoft" style="color:#5c2d91;"></i> .Net</span>
+            <span class="tech-pill"><i class="fa fa-code" style="color:#9b4f96;"></i> C#</span>
+            <span class="tech-pill"><i class="fa fa-database" style="color:#cc292b;"></i> SQL Server</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="section section-alt">
+  <!-- OUR CLIENTS -->
+  <section class="section section-alt" id="ourClients">
     <div class="container">
       <div class="text-center mb-5">
-        <div class="section-label">Client Voices</div>
-        <h2 class="section-title">What Our Clients Say</h2>
-        <p class="section-sub mx-auto">Real feedback from businesses we've partnered with on their technology journey.
-        </p>
+        <div class="section-label"><i class="fa fa-handshake me-1"></i> Client Network</div>
+        <h2 class="section-title">Our Clients</h2>
+        <p class="section-sub mx-auto">Partnering with leading financial institutions and global enterprises across key regions.</p>
       </div>
-      <div class="row g-4">
-        <div class="col-md-4 d-flex">
-          <div class="testi-card w-100">
-            <div class="d-flex align-items-center gap-2 mb-3"
-              style="color:#fbbc04;font-size:0.82rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;">
-              <i class="fa fa-quote-left"></i><span>Client feedback</span>
-            </div>
-            <p class="testi-quote">"<strong>T</strong> Skill Lab delivered our AWS migration with zero downtime. Their team was
-              professional, proactive, and deeply knowledgeable about cloud architecture. Highly recommended."</p>
-            <div class="d-flex align-items-center gap-3 mt-4 pt-3" style="border-top:1px solid var(--border);">
-              <div class="avatar" style="background:var(--g-blue);">AK</div>
-              <div>
-                <div style="font-weight:700;font-size:0.9rem;color:var(--text-primary);">Arjun Kapoor</div>
-                <div style="font-size:0.78rem;color:var(--text-muted);">CTO, FinEdge Solutions</div>
-              </div>
-            </div>
+
+      <!-- 4 Simple Region Tab Buttons -->
+      <div class="creg-tabs-wrapper">
+        <div class="creg-tabs" role="tablist">
+          <button class="creg-tab active" data-creg="0" role="tab"><i class="fa fa-globe-asia me-2"></i>Asia Pacific</button>
+          <button class="creg-tab" data-creg="1" role="tab"><i class="fa fa-landmark me-2"></i>Middle East</button>
+          <button class="creg-tab" data-creg="2" role="tab"><i class="fa fa-globe-africa me-2"></i>Africa</button>
+          <button class="creg-tab" data-creg="3" role="tab"><i class="fa fa-globe-europe me-2"></i>Europe</button>
+        </div>
+        <!-- Progress bar -->
+        <div class="creg-progress-track">
+          <div class="creg-progress-fill" id="cregFill"></div>
+        </div>
+      </div>
+
+      <!-- Main Card -->
+      <div id="cregPanels">
+
+        <!-- Asia Pacific -->
+        <div class="creg-panel active" data-creg-panel="0">
+          <div class="creg-left">
+            <h3 class="creg-region-name">Asia Pacific</h3>
+          </div>
+          <div class="creg-right">
+            <ul class="creg-client-list">
+              <li>Nayara Energy Limited</li>
+              <li>UPL</li>
+              <li>Nuvama Wealth Management</li>
+              <li>Yes Bank</li>
+              <li>CTBC (Taiwan)</li>
+              <li>QSEAP Infotech Pvt Ltd</li>
+              <li>India Factoring &amp; Finance Solutions Pvt. Ltd</li>
+              <li>PNB Housing Finance</li>
+              <li>Unistar</li>
+              <li>Wonderful WE R</li>
+            </ul>
           </div>
         </div>
-        <div class="col-md-4 d-flex">
-          <div class="testi-card w-100">
-            <div class="d-flex align-items-center gap-2 mb-3"
-              style="color:#fbbc04;font-size:0.82rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;">
-              <i class="fa fa-quote-left"></i><span>Client feedback</span>
-            </div>
-            <p class="testi-quote">"Their custom development team built our full-stack platform in record time. Code
-              quality was exceptional and the communication was always transparent and clear."</p>
-            <div class="d-flex align-items-center gap-3 mt-4 pt-3" style="border-top:1px solid var(--border);">
-              <div class="avatar" style="background:var(--g-green);">SP</div>
-              <div>
-                <div style="font-weight:700;font-size:0.9rem;color:var(--text-primary);">Sneha Patel</div>
-                <div style="font-size:0.78rem;color:var(--text-muted);">Product Manager, RetailTech</div>
-              </div>
-            </div>
+
+        <!-- Middle East -->
+        <div class="creg-panel" data-creg-panel="1">
+          <div class="creg-left">
+            <h3 class="creg-region-name">Middle East</h3>
+          </div>
+          <div class="creg-right">
+            <ul class="creg-client-list">
+              <li>Emirates NBD</li>
+              <li>Mashreq Bank</li>
+              <li>Noor Bank</li>
+              <li>RakBank</li>
+              <li>Mena Bank</li>
+              <li>National Finance House Bahrain</li>
+              <li>Bidaya</li>
+              <li>Matager</li>
+              <li>National Finance House</li>
+              <li>BCFC</li>
+              <li>Tamweel</li>
+              <li>Saudi Home Loans (SHL)</li>
+              <li>Alamtahl</li>
+            </ul>
           </div>
         </div>
-        <div class="col-md-4 d-flex">
-          <div class="testi-card w-100">
-            <div class="d-flex align-items-center gap-2 mb-3"
-              style="color:#fbbc04;font-size:0.82rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;">
-              <i class="fa fa-quote-left"></i><span>Client feedback</span>
-            </div>
-            <p class="testi-quote">"The DevSecOps pipeline <strong>T</strong> Skill Lab built transformed our deployment process. We went
-              from weekly releases to multiple safe deployments per day. Game changer."</p>
-            <div class="d-flex align-items-center gap-3 mt-4 pt-3" style="border-top:1px solid var(--border);">
-              <div class="avatar" style="background:var(--g-red);">RV</div>
-              <div>
-                <div style="font-weight:700;font-size:0.9rem;color:var(--text-primary);">Rohan Verma</div>
-                <div style="font-size:0.78rem;color:var(--text-muted);">Engineering Lead, SaaS Co.</div>
-              </div>
-            </div>
+
+        <!-- Africa -->
+        <div class="creg-panel" data-creg-panel="2">
+          <div class="creg-left">
+            <h3 class="creg-region-name">Africa</h3>
+          </div>
+          <div class="creg-right">
+            <ul class="creg-client-list">
+              <li>United Bank for Africa (UBA)</li>
+              <li>Pembangunan Leasing Corporation</li>
+            </ul>
           </div>
         </div>
+
+        <!-- Europe -->
+        <div class="creg-panel" data-creg-panel="3">
+          <div class="creg-left">
+            <h3 class="creg-region-name">Europe</h3>
+          </div>
+          <div class="creg-right">
+            <ul class="creg-client-list">
+              <li>Credit Suisse</li>
+              <li>FIMBANK (MALTA)</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
+
 
   <!-- CTA BANNER -->
   <section class="section">
@@ -409,7 +454,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Custom JS -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/preloader.js"></script>
+  <!-- <script src="assets/js/preloader.js"></script> -->
 </body>
 
 </html>
